@@ -5,3 +5,5 @@
 // If region is null, use "Unassigned" instead.
 
 
+string displayRegion = region ?? "Unassigned";
+Console.WriteLine($"Region: {displayRegion}");
