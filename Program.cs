@@ -1,8 +1,7 @@
 ﻿string? region = "null";
 //three ways 
 
-// Null-conditional operator '?.' — skip the call if null
-// If region is null, ToUpper() never executes. No crash.
+// Null-coalescing operator '??' — provide a fallback value
+// If region is null, use "Unassigned" instead.
 
-string? upperRegion = region?.ToUpper();
-Console.WriteLine($"Region (conditional): {upperRegion}");
+
