@@ -1,9 +1,8 @@
 ﻿string? region = "null";
 //three ways 
 
-// Null-coalescing operator '??' — provide a fallback value
-// If region is null, use "Unassigned" instead.
+/// Null-coalescing assignment '??=' — assign only if currently null
+// Useful for lazy initialization.
 
-
-string displayRegion = region ?? "Unassigned";
-Console.WriteLine($"Region: {displayRegion}");
+region ??= "Addis Ababa"; // Assigns "addis Ababa" only if region is null
+Console.WriteLine($"Region after null-coalescing assignment: {region}");
